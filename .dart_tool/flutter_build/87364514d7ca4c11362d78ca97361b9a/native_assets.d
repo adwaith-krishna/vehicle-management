@@ -1,0 +1,1 @@
+ C:\\Users\\adwai\\Downloads\\Mini\ Project\\Project\\vehiman\\.dart_tool\\flutter_build\\87364514d7ca4c11362d78ca97361b9a\\native_assets.yaml: 

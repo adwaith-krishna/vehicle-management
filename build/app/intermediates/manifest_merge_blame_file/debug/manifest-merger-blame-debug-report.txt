@@ -1,0 +1,324 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.vehiman"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="19"
+9        android:targetSdkVersion="33" />
+10    <!--
+11         The INTERNET permission is required for development. Specifically,
+12         the Flutter tool needs it to communicate with the running application
+13         to allow setting breakpoints, to provide hot reload, etc.
+14    -->
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\android\app\src\debug\AndroidManifest.xml:6:5-66
+15-->C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\android\app\src\debug\AndroidManifest.xml:6:22-64
+16    <!--
+17     Required to query activities that can process text, see:
+18         https://developer.android.com/training/package-visibility?hl=en and
+19         https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+20
+21         In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin.
+22    -->
+23    <queries>
+23-->C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\android\app\src\main\AndroidManifest.xml:38:5-43:15
+24        <intent>
+24-->C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\android\app\src\main\AndroidManifest.xml:39:9-42:18
+25            <action android:name="android.intent.action.PROCESS_TEXT" />
+25-->C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\android\app\src\main\AndroidManifest.xml:40:13-72
+25-->C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\android\app\src\main\AndroidManifest.xml:40:21-70
+26
+27            <data android:mimeType="text/plain" />
+27-->C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\android\app\src\main\AndroidManifest.xml:41:13-50
+27-->C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\android\app\src\main\AndroidManifest.xml:41:19-48
+28        </intent>
+29    </queries>
+30
+31    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+31-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:24:5-79
+31-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:24:22-76
+32
+33    <permission
+33-->[androidx.core:core:1.10.1] C:\Users\adwai\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:22:5-24:47
+34        android:name="com.example.vehiman.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+34-->[androidx.core:core:1.10.1] C:\Users\adwai\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:23:9-81
+35        android:protectionLevel="signature" />
+35-->[androidx.core:core:1.10.1] C:\Users\adwai\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:24:9-44
+36
+37    <uses-permission android:name="com.example.vehiman.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+37-->[androidx.core:core:1.10.1] C:\Users\adwai\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:26:5-97
+37-->[androidx.core:core:1.10.1] C:\Users\adwai\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:26:22-94
+38
+39    <application
+40        android:name="android.app.Application"
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.10.1] C:\Users\adwai\.gradle\caches\transforms-3\0b9c903fef8d2eb2a269c36999ef4a74\transformed\core-1.10.1\AndroidManifest.xml:28:18-86
+42        android:debuggable="true"
+43        android:icon="@mipmap/ic_launcher"
+44        android:label="vehiman" >
+45        <activity
+46            android:name="com.example.vehiman.MainActivity"
+47            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+48            android:exported="true"
+49            android:hardwareAccelerated="true"
+50            android:launchMode="singleTop"
+51            android:theme="@style/LaunchTheme"
+52            android:windowSoftInputMode="adjustResize" >
+53
+54            <!--
+55                 Specifies an Android theme to apply to this Activity as soon as
+56                 the Android process has started. This theme is visible to the user
+57                 while the Flutter UI initializes. After that, this theme continues
+58                 to determine the Window background behind the Flutter UI.
+59            -->
+60            <meta-data
+61                android:name="io.flutter.embedding.android.NormalTheme"
+62                android:resource="@style/NormalTheme" />
+63
+64            <intent-filter>
+65                <action android:name="android.intent.action.MAIN" />
+66
+67                <category android:name="android.intent.category.LAUNCHER" />
+68            </intent-filter>
+69        </activity>
+70        <!--
+71             Don't delete the meta-data below.
+72             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+73        -->
+74        <meta-data
+75            android:name="flutterEmbedding"
+76            android:value="2" />
+77
+78        <service
+78-->[:firebase_auth] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:9-14:19
+79            android:name="com.google.firebase.components.ComponentDiscoveryService"
+79-->[:firebase_auth] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:10:18-89
+80            android:directBootAware="true"
+80-->[com.google.firebase:firebase-common:20.1.2] C:\Users\adwai\.gradle\caches\transforms-3\1ea128e035867bc055ee14052cd7c731\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:35:13-43
+81            android:exported="false" >
+81-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:66:13-37
+82            <meta-data
+82-->[:firebase_auth] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+83                android:name="com.google.firebase.components:io.flutter.plugins.firebase.auth.FlutterFirebaseAuthRegistrar"
+83-->[:firebase_auth] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+84                android:value="com.google.firebase.components.ComponentRegistrar" />
+84-->[:firebase_auth] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\firebase_auth\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+85            <meta-data
+85-->[:firebase_core] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:11:13-13:85
+86                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+86-->[:firebase_core] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:12:17-124
+87                android:value="com.google.firebase.components.ComponentRegistrar" />
+87-->[:firebase_core] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\firebase_core\intermediates\merged_manifest\debug\AndroidManifest.xml:13:17-82
+88            <meta-data
+88-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:67:13-69:85
+89                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+89-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:68:17-109
+90                android:value="com.google.firebase.components.ComponentRegistrar" />
+90-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:69:17-82
+91        </service>
+92
+93        <provider
+93-->[:image_picker_android] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:11:9-19:20
+94            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+94-->[:image_picker_android] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:12:13-82
+95            android:authorities="com.example.vehiman.flutter.image_provider"
+95-->[:image_picker_android] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:13:13-74
+96            android:exported="false"
+96-->[:image_picker_android] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:14:13-37
+97            android:grantUriPermissions="true" >
+97-->[:image_picker_android] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:15:13-47
+98            <meta-data
+98-->[:image_picker_android] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:16:13-18:75
+99                android:name="android.support.FILE_PROVIDER_PATHS"
+99-->[:image_picker_android] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:17:17-67
+100                android:resource="@xml/flutter_image_picker_file_paths" />
+100-->[:image_picker_android] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:18:17-72
+101        </provider> <!-- Trigger Google Play services to install the backported photo picker module. -->
+102        <service
+102-->[:image_picker_android] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:21:9-33:19
+103            android:name="com.google.android.gms.metadata.ModuleDependencies"
+103-->[:image_picker_android] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:22:13-78
+104            android:enabled="false"
+104-->[:image_picker_android] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:23:13-36
+105            android:exported="false" >
+105-->[:image_picker_android] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:24:13-37
+106            <intent-filter>
+106-->[:image_picker_android] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:26:13-28:29
+107                <action android:name="com.google.android.gms.metadata.MODULE_DEPENDENCIES" />
+107-->[:image_picker_android] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:27:17-94
+107-->[:image_picker_android] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:27:25-91
+108            </intent-filter>
+109
+110            <meta-data
+110-->[:image_picker_android] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:30:13-32:36
+111                android:name="photopicker_activity:0:required"
+111-->[:image_picker_android] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:31:17-63
+112                android:value="" />
+112-->[:image_picker_android] C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\build\image_picker_android\intermediates\merged_manifest\debug\AndroidManifest.xml:32:17-33
+113        </service>
+114
+115        <activity
+115-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:27:9-44:20
+116            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+116-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:28:13-80
+117            android:excludeFromRecents="true"
+117-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:29:13-46
+118            android:exported="true"
+118-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:30:13-36
+119            android:launchMode="singleTask"
+119-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:31:13-44
+120            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+120-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:32:13-72
+121            <intent-filter>
+121-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:33:13-43:29
+122                <action android:name="android.intent.action.VIEW" />
+122-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:34:17-69
+122-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:34:25-66
+123
+124                <category android:name="android.intent.category.DEFAULT" />
+124-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:36:17-76
+124-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:36:27-73
+125                <category android:name="android.intent.category.BROWSABLE" />
+125-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:37:17-78
+125-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:37:27-75
+126
+127                <data
+127-->C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\android\app\src\main\AndroidManifest.xml:41:13-50
+128                    android:host="firebase.auth"
+129                    android:path="/"
+130                    android:scheme="genericidp" />
+131            </intent-filter>
+132        </activity>
+133        <activity
+133-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:45:9-62:20
+134            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+134-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:46:13-79
+135            android:excludeFromRecents="true"
+135-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:47:13-46
+136            android:exported="true"
+136-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:48:13-36
+137            android:launchMode="singleTask"
+137-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:49:13-44
+138            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+138-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:50:13-72
+139            <intent-filter>
+139-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:51:13-61:29
+140                <action android:name="android.intent.action.VIEW" />
+140-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:34:17-69
+140-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:34:25-66
+141
+142                <category android:name="android.intent.category.DEFAULT" />
+142-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:36:17-76
+142-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:36:27-73
+143                <category android:name="android.intent.category.BROWSABLE" />
+143-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:37:17-78
+143-->[com.google.firebase:firebase-auth:21.0.8] C:\Users\adwai\.gradle\caches\transforms-3\7ea201cba39620878187138fe0e8ac46\transformed\jetified-firebase-auth-21.0.8\AndroidManifest.xml:37:27-75
+144
+145                <data
+145-->C:\Users\adwai\Downloads\Mini Project\Project\vehiman (2)\vehiman\android\app\src\main\AndroidManifest.xml:41:13-50
+146                    android:host="firebase.auth"
+147                    android:path="/"
+148                    android:scheme="recaptcha" />
+149            </intent-filter>
+150        </activity>
+151
+152        <provider
+152-->[com.google.firebase:firebase-common:20.1.2] C:\Users\adwai\.gradle\caches\transforms-3\1ea128e035867bc055ee14052cd7c731\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:26:9-31:39
+153            android:name="com.google.firebase.provider.FirebaseInitProvider"
+153-->[com.google.firebase:firebase-common:20.1.2] C:\Users\adwai\.gradle\caches\transforms-3\1ea128e035867bc055ee14052cd7c731\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:27:13-77
+154            android:authorities="com.example.vehiman.firebaseinitprovider"
+154-->[com.google.firebase:firebase-common:20.1.2] C:\Users\adwai\.gradle\caches\transforms-3\1ea128e035867bc055ee14052cd7c731\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:28:13-72
+155            android:directBootAware="true"
+155-->[com.google.firebase:firebase-common:20.1.2] C:\Users\adwai\.gradle\caches\transforms-3\1ea128e035867bc055ee14052cd7c731\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:29:13-43
+156            android:exported="false"
+156-->[com.google.firebase:firebase-common:20.1.2] C:\Users\adwai\.gradle\caches\transforms-3\1ea128e035867bc055ee14052cd7c731\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:30:13-37
+157            android:initOrder="100" />
+157-->[com.google.firebase:firebase-common:20.1.2] C:\Users\adwai\.gradle\caches\transforms-3\1ea128e035867bc055ee14052cd7c731\transformed\jetified-firebase-common-20.1.2\AndroidManifest.xml:31:13-36
+158
+159        <activity
+159-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\adwai\.gradle\caches\transforms-3\54e54cb370499bcada85f4022f567159\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:23:9-26:75
+160            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+160-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\adwai\.gradle\caches\transforms-3\54e54cb370499bcada85f4022f567159\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:24:13-79
+161            android:exported="false"
+161-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\adwai\.gradle\caches\transforms-3\54e54cb370499bcada85f4022f567159\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:25:13-37
+162            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+162-->[com.google.android.gms:play-services-base:17.1.0] C:\Users\adwai\.gradle\caches\transforms-3\54e54cb370499bcada85f4022f567159\transformed\jetified-play-services-base-17.1.0\AndroidManifest.xml:26:13-72
+163
+164        <meta-data
+164-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\adwai\.gradle\caches\transforms-3\95e76454cff392b3dff66e1259c7e57f\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+165            android:name="com.google.android.gms.version"
+165-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\adwai\.gradle\caches\transforms-3\95e76454cff392b3dff66e1259c7e57f\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+166            android:value="@integer/google_play_services_version" />
+166-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\adwai\.gradle\caches\transforms-3\95e76454cff392b3dff66e1259c7e57f\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+167
+168        <uses-library
+168-->[androidx.window:window:1.0.0-beta04] C:\Users\adwai\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+169            android:name="androidx.window.extensions"
+169-->[androidx.window:window:1.0.0-beta04] C:\Users\adwai\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+170            android:required="false" />
+170-->[androidx.window:window:1.0.0-beta04] C:\Users\adwai\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+171        <uses-library
+171-->[androidx.window:window:1.0.0-beta04] C:\Users\adwai\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+172            android:name="androidx.window.sidecar"
+172-->[androidx.window:window:1.0.0-beta04] C:\Users\adwai\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+173            android:required="false" />
+173-->[androidx.window:window:1.0.0-beta04] C:\Users\adwai\.gradle\caches\transforms-3\032f4dff274e516110d9363a9793a3e3\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+174
+175        <provider
+175-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:24:9-32:20
+176            android:name="androidx.startup.InitializationProvider"
+176-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:25:13-67
+177            android:authorities="com.example.vehiman.androidx-startup"
+177-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:26:13-68
+178            android:exported="false" >
+178-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:27:13-37
+179            <meta-data
+179-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:29:13-31:52
+180                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+180-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:30:17-85
+181                android:value="androidx.startup" />
+181-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:31:17-49
+182        </provider>
+183
+184        <receiver
+184-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:34:9-52:20
+185            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+185-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:35:13-76
+186            android:directBootAware="false"
+186-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:36:13-44
+187            android:enabled="true"
+187-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:37:13-35
+188            android:exported="true"
+188-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:38:13-36
+189            android:permission="android.permission.DUMP" >
+189-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:39:13-57
+190            <intent-filter>
+190-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:40:13-42:29
+191                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+191-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:17-91
+191-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:41:25-88
+192            </intent-filter>
+193            <intent-filter>
+193-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:43:13-45:29
+194                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+194-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:17-85
+194-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:44:25-82
+195            </intent-filter>
+196            <intent-filter>
+196-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:46:13-48:29
+197                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+197-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:17-88
+197-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:47:25-85
+198            </intent-filter>
+199            <intent-filter>
+199-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:49:13-51:29
+200                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+200-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:17-95
+200-->[androidx.profileinstaller:profileinstaller:1.3.0] C:\Users\adwai\.gradle\caches\transforms-3\a0ecce03964d1d4dc26ffab32b08b16e\transformed\jetified-profileinstaller-1.3.0\AndroidManifest.xml:50:25-92
+201            </intent-filter>
+202        </receiver>
+203    </application>
+204
+205</manifest>

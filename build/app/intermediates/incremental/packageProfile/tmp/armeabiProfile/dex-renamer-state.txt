@@ -1,0 +1,4 @@
+#Sun Mar 31 12:56:38 IST 2024
+base.0=C\:\\Users\\adwai\\Downloads\\Mini Project\\Project\\vehiman\\build\\app\\intermediates\\dex\\profile\\mergeDexProfile\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,1 @@
+ C:\\Users\\adwai\\Downloads\\Mini\ Project\\Project\\mini_proj\\.dart_tool\\flutter_build\\bae401c1ee000d56007c65285c2faecf\\native_assets.yaml: 
